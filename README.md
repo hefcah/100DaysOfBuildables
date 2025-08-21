@@ -10,16 +10,14 @@ Over the course of 100 days, I’ll work on **3 projects** — two paired projec
 
 # Projects Overview
 #  Project 1 – Paired  
-*Description of project (to be updated)*  
-- Skills: Machine Learning, Data Preprocessing, Model Training  
+*Description of project (to be updated)* 
 
 #  Project 2 – Paired  
 *Description of project (to be updated)*  
-- Skills: Deep Learning, Computer Vision/NLP, Model Deployment  
+
 
 #  Project 3 – Individual  
 *Description of project (to be updated)*  
-- Skills: Advanced ML/DL, Problem Solving, End-to-End Implementation  
 
 ---
 
