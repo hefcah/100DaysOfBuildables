@@ -9,8 +9,8 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 
 st.title(" House Price Analysis & Prediction App")
-
-df = pd.read_csv("C:\\Users\\ma007\\OneDrive\\Desktop\\app\\Housing.csv")   
+df = pd.read_csv("Housing.csv")
+  
 st.subheader(" Dataset Preview")
 st.dataframe(df.head())
 
@@ -106,4 +106,5 @@ for col in X.columns:
 
 prediction = model.predict(input_df)[0]
 st.write(f" **Predicted House Price:** {prediction:.2f}")
+
 
