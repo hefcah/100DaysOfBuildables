@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.title(" House Price Analysis & Prediction App")
 
-df = pd.read_csv("C:\Users\ma007\OneDrive\Desktop\app\Housing.csv")   
+df = pd.read_csv("C:\\Users\\ma007\\OneDrive\\Desktop\\app\\Housing.csv")   
 st.subheader(" Dataset Preview")
 st.dataframe(df.head())
 
@@ -86,7 +86,7 @@ st.write(f"**MAE:** {mae:.2f}")
 st.write(f"**RMSE:** {rmse:.2f}")
 st.write(f"**R² Score:** {r2:.2f}")
 
-# 7. Predictions
+#  Predictions
 
 st.subheader(" Make Your Own Prediction")
 
@@ -106,3 +106,4 @@ for col in X.columns:
 
 prediction = model.predict(input_df)[0]
 st.write(f" **Predicted House Price:** {prediction:.2f}")
+
