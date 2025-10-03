@@ -8,8 +8,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 
 @st.cache_data
-def load_data():
-    data = pd.read_csv("C:\\Users\\ma007\\Downloads\\archive (6)\\data.csv")
+uploaded_file = st.file_uploader("Upload your CSV", type="csv")
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    st.write("Data Preview:", data.head())
+
     # Drop unnecessary columns that do not add value
     data = data.drop(["id", "Unnamed: 32"], axis=1)
     return data
@@ -91,3 +94,4 @@ if st.button("Predict"):
     input_scaled = scaler.transform([sample_input])
     pred = model.predict(input_scaled)[0]
     st.success(f"Predicted Diagnosis: {pred}")
+
